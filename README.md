@@ -25,6 +25,8 @@ Recon Jammer is a dynamic honeypot which detects reconnisance scanning from tool
 
 <img width="539" alt="Screenshot 2025-05-02 163417" src="https://github.com/user-attachments/assets/b5e3701c-fe11-4fd9-86f0-71dc10a95452" />
 
+It's quite obvious in this example that the ```/admin``` is simply using a 301 redirect to the ```/honeypot-admin``` page. This would be a poor honeypot as it's blatantly obvious what it is doing and would not be effective.
+
 ### How Recon Jammer's silent redirection works:
 
 
