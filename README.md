@@ -1,4 +1,4 @@
-# Poisoned Admin Honeypot
+# Recon Jammer, a poisoned admin honeypot
 
 ## 🛠️ Technologies Used
 - Apache2
