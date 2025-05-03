@@ -41,7 +41,7 @@ Since the redireciton is done internally, the redirection is unnoticable and all
 4. Run the honeypot detection script
 5. Attempt a recon scan and see yourself get silently redirected to the fake /admin page.
 
-# Notes: I personally did everything using ```Oracle Cloud's Free Tier``` which is where I had everything running.
+Note: I personally did everything using ```Oracle Cloud's Free Tier``` which is where I had everything running.
 
 ## 📁 Project Structure
 
