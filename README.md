@@ -25,6 +25,7 @@
 │   └── index.html
 ├── hp/                         # Honeypot page
 │   └── index.html
+├── index.html                  # Default Apache2 page
 
 /home/user/
 └── main.py                     # Detection + IP appender script
