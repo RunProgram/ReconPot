@@ -13,7 +13,7 @@ Recon Jammer is a dynamic honeypot which detects reconnisance scanning from tool
 
 ## 🚀 Features
 - The python script lives on the server listening for repeated and suspicious requests from web fuzzers and trips the honeypot for that IP address when it is detected.
-- A very important feature is that the redirection is done completely silently which is achieved via Apache2's ```mod_rewrite``` instead of classic 302 redirection. This means that both standard users (real users, administrators, etc.) and attackers will see the ```/admin``` page except one will be a fake clone which captures details on further enumeration or exploitation attempted.
+- A very important feature is that the redirection is done completely silently which is achieved via Apache2's ```mod_rewrite``` instead of classic 302 redirection. This means that both standard users (real users, administrators, etc.) and attackers will see the ```/admin``` page except atackers will actually be looking at a fake clone which captures details on further enumeration or exploitation attempted (assuming they have triggered the honeypot).
 
 # Example of obvious and poorly executed redirection:
 
