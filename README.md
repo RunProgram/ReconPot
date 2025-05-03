@@ -7,6 +7,10 @@
 - `mod_rewrite`
 - Linux (Ubuntu / Debian)
 
+## Overview
+Recon Jammer is a dynamic honeypot which detects reconnisance scanning from tools like gobuster/dirbuster/ffuf and silently redirects attackers to a poisoned version of the 
+```/admin``` page.
+
 ## 🚀 Features
 - 
 - 
