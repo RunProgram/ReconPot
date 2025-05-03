@@ -30,7 +30,7 @@ It's quite obvious in this example that the ```/admin``` is simply using a 301 r
 
 ### How ReconPot's silent redirection works:
 
-<img width="591" alt="Screenshot 2025-05-03 150802" src="https://github.com/user-attachments/assets/9d628abb-c186-41ad-aff3-8bbbf1c5e6d1" />
+<img width="591" alt="Screenshot 2025-05-03 150802" src="https://github.com/user-attachments/assets/ec648467-c14d-4293-8213-6e7891247f8d" />
 
 Since the redireciton is done internally, the redirection is unnoticable and all the attacker sees is the ```/admin``` page just like everyone else.
 
