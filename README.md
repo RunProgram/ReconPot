@@ -18,7 +18,7 @@ Recon Jammer is a dynamic honeypot which detects reconnisance scanning from tool
 3. 
 
 ## 🚀 Features
-- Recon Jammer's most important feature is that the redirection is done completely silently which is achieved via Apache2's ```mod_rewrite``` instead of classic 302 redirection. This means that both standard users (real users, administrators, etc.) and attackers will see the ```/admin``` page except atackers will actually be looking at a fake clone which captures details on further enumeration or exploitation attempted (assuming they have triggered the honeypot).
+- Recon Jammer's most important feature is that the redirection is done completely silently which is achieved via Apache2's ```mod_rewrite``` instead of classic 302 redirection. This means that both standard users (real users, administrators, etc.) and attackers will see the ```/admin``` page.
 - The poisoned ```/admin``` page captures information on further enumeration attempts or exploitation attempts (SQL injections, etc) and notifies the team that an attack is taking place via ```Discord's API```.
 
 ### Example of obvious and poorly executed redirection:
