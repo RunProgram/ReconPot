@@ -63,4 +63,4 @@ It's quite obvious in this example that the ```/admin``` is simply using a 301 r
 - 
 
 ## 📜 License
-MIT
+GNU General Public License v3.0
