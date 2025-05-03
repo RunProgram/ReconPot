@@ -35,11 +35,11 @@ It's quite obvious in this example that the ```/admin``` is simply using a 301 r
 Since the redireciton is done internally, the redirection is unnoticable and all the attacker sees is the ```/admin``` page just like everyone else.
 
 ## ⚙️ Setup
-# 1. Clone repo and set up Apache directories
-# 2. Enable required Apache modules
-# 3. Configure and reload Apache
-# 4. Run the honeypot detection script
-# 5. Attempt a recon scan and see yourself get silently redirected to the fake /admin page.
+1. Clone repo and set up Apache directories
+2. Enable required Apache modules
+3. Configure and reload Apache
+4. Run the honeypot detection script
+5. Attempt a recon scan and see yourself get silently redirected to the fake /admin page.
 
 # Notes: I personally did everything using ```Oracle Cloud's Free Tier``` which is where I had everything running.
 
