@@ -8,7 +8,7 @@
 - Linux (Ubuntu / Debian)
 
 ## 🏠 Overview
-Recon Jammer is a dynamic honeypot which detects reconnisance scanning from tools like gobuster/dirbuster/ffuf and silently redirects attackers to a poisoned version of the 
+ReconPot is a dynamic honeypot which detects reconnaissance scanning from tools like gobuster/dirbuster/ffuf and silently redirects attackers to a poisoned version of the 
 ```/admin``` page.
 
 ## 🧠 How It Works
@@ -19,7 +19,7 @@ Recon Jammer is a dynamic honeypot which detects reconnisance scanning from tool
 4. Sends out an alert to the administrators that someone is attempting reconnaissance on the website which helps harden security. 
 
 ## 🚀 Features
-- Recon Jammer's most important feature is silent redirection which is achieved via Apache2's ```mod_rewrite``` instead of classic 301 redirection. This means that both standard users (real users, administrators, etc.) and attackers will see the ```/admin``` page. However, if your IP has tripped the honeypot, you will get a poisoned version with the exact same directory name as users with the normal version.
+- ReconPot's most important feature is silent redirection which is achieved via Apache2's ```mod_rewrite``` instead of classic 301 redirection. This means that both standard users (real users, administrators, etc.) and attackers will see the ```/admin``` page. However, if your IP has tripped the honeypot, you will get a poisoned version with the exact same directory name as users with the normal version.
 - The poisoned ```/admin``` page captures information on further enumeration attempts or exploitation attempts (SQL injections, etc) and notifies the team that an attack is taking place via ```Discord's API```.
 
 ### Example of poorly executed redirection:
