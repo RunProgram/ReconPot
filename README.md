@@ -24,12 +24,13 @@ ReconPot is a dynamic honeypot which detects reconnaissance scanning from tools 
 
 ### Example of poorly executed redirection:
 
-<img width="539" alt="Screenshot 2025-05-02 163417" src="https://github.com/user-attachments/assets/b5e3701c-fe11-4fd9-86f0-71dc10a95452" />
+<img width="539" alt="Screenshot 2025-05-02 163417" src="https://github.com/user-attachments/assets/49c0a037-79ec-4722-9e52-21485b5205af" />
 
 It's quite obvious in this example that the ```/admin``` is simply using a 301 redirect to the ```/honeypot-admin``` page. This would be a poor honeypot as it's blatantly obvious what it is doing and would not be effective.
 
 ### How ReconPot's silent redirection works:
 
+<img width="591" alt="Screenshot 2025-05-03 150802" src="https://github.com/user-attachments/assets/9d628abb-c186-41ad-aff3-8bbbf1c5e6d1" />
 
 ## 📁 Project Structure
 
