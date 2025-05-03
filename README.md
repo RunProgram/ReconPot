@@ -14,7 +14,7 @@ Recon Jammer is a dynamic honeypot which detects reconnisance scanning from tool
 ## 🧠 How It Works
 
 1. A python script lives on the server listening for repeated and suspicious requests from web fuzzers and trips the honeypot for that IP address when it is detected.
-2. The ```000-default.conf``` Apache file controls the silent redirection using ```mod_rewrite``` instead of 301 redirection as previously mentioned.
+2. The ```/apache/000-default.conf``` file controls the silent redirection using ```mod_rewrite``` instead of 301 redirection as previously mentioned.
 3. Once the honeypot is deployed, the attacker (their IP) is permanently redirected to the poisoned ```/admin``` page without knowing.
 4. Sends out an alert to the administrators that someone is attempting reconnaissance on the website which helps harden security. 
 
