@@ -23,7 +23,7 @@ Recon Jammer is a dynamic honeypot which detects reconnisance scanning from tool
 
 ### Example of poorly executed redirection:
 
-<img width="539" alt="Screenshot 2025-05-02 163417" src="https://github.com/user-attachments/assets/be2a6019-bf0c-403d-99dc-7b63f03e95d9" />
+<img width="539" alt="Screenshot 2025-05-02 163417" src="https://github.com/user-attachments/assets/b5e3701c-fe11-4fd9-86f0-71dc10a95452" />
 
 ### How Recon Jammer's silent redirection works:
 
