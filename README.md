@@ -11,6 +11,12 @@
 Recon Jammer is a dynamic honeypot which detects reconnisance scanning from tools like gobuster/dirbuster/ffuf and silently redirects attackers to a poisoned version of the 
 ```/admin``` page.
 
+## 🧠 How It Works
+
+1. The python script lives on the server listening for repeated and suspicious requests from web fuzzers and trips the honeypot for that IP address when it is detected.
+2. Once the honeypot is deployed, the attacker (their IP) is permanently redirected to the poisoned ```/admin``` page without knowing.
+3. 
+
 ## 🚀 Features
 - Recon Jammer's most important feature is that the redirection is done completely silently which is achieved via Apache2's ```mod_rewrite``` instead of classic 302 redirection. This means that both standard users (real users, administrators, etc.) and attackers will see the ```/admin``` page except atackers will actually be looking at a fake clone which captures details on further enumeration or exploitation attempted (assuming they have triggered the honeypot).
 - The poisoned ```/admin``` page captures information on further enumeration attempts or exploitation attempts (SQL injections, etc) and notifies the team that an attack is taking place via ```Discord's API```.
@@ -19,14 +25,6 @@ Recon Jammer is a dynamic honeypot which detects reconnisance scanning from tool
 
 
 ### How Recon Jammer's silent redirection works:
-
-
-## 🧠 How It Works
-
-1. The python script lives on the server listening for repeated and suspicious requests from web fuzzers and trips the honeypot for that IP address when it is detected.
-2. Once the honeypot is deployed, the attacker (their IP) is permanently redirected to the poisoned ```/admin``` page without knowing.
-3. 
-
 
 
 ## 📁 Project Structure
