@@ -13,7 +13,7 @@ ReconPot is a dynamic honeypot which detects reconnaissance scanning from tools 
 
 ## 🧠 How It Works
 
-1. A python script lives on the server listening for repeated and suspicious requests from web fuzzers and trips the honeypot for that IP address when it is detected.
+1. ```honeypot.py``` lives on the server listening for repeated and suspicious requests from web fuzzers and trips the honeypot for that IP address when it is detected.
 2. The ```/apache/000-default.conf``` file controls the silent redirection using ```mod_rewrite``` instead of 301 redirection as previously mentioned.
 3. Once the honeypot is deployed, the attacker (their IP) is permanently redirected to the fake ```/admin``` page without knowing.
 4. Sends out an alert to the administrators that someone is attempting reconnaissance on the website which helps harden security. 
@@ -36,6 +36,18 @@ Since the redireciton is done internally, the redirection is unnoticable and all
 
 ## 📁 Project Structure
 
+## ⚙️ Setup
+
+```bash
+# 1. Clone repo and set up Apache directories
+# 2. Enable required Apache modules
+# 3. Configure and reload Apache
+# 4. Run the honeypot detection script
+# 5. Attempt a recon scan and see yourself get silently redirected to the fake /admin page.
+
+# Notes: I personally did everything using ```Oracle Cloud's Free Tier``` which is where I had everything running.
+```
+
 ```
 /etc/apache2/
 ├── sites-available/
@@ -51,15 +63,6 @@ Since the redireciton is done internally, the redirection is unnoticable and all
 
 /home/user/
 └── main.py                     # Detection + IP appender script
-```
-
-## ⚙️ Setup
-
-```bash
-# 1. Clone repo and set up Apache directories
-# 2. Enable required Apache modules
-# 3. Configure and reload Apache
-# 4. Run the honeypot detection script
 ```
 
 ## 🔒 Security Considerations
