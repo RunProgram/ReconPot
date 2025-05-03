@@ -22,7 +22,9 @@ Recon Jammer is a dynamic honeypot which detects reconnisance scanning from tool
 - The poisoned ```/admin``` page captures information on further enumeration attempts or exploitation attempts (SQL injections, etc) and notifies the team that an attack is taking place via ```Discord's API```.
 
 ### Example of poorly executed redirection:
+
 <img width="539" alt="Screenshot 2025-05-02 163417" src="https://github.com/user-attachments/assets/be2a6019-bf0c-403d-99dc-7b63f03e95d9" />
+
 ### How Recon Jammer's silent redirection works:
 
 
