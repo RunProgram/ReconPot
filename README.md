@@ -1,4 +1,4 @@
-# Web Recon Honeypot, a poisoned admin honeypot
+# ReconPot, a poisoned admin honeypot which fights against web reconnaissance.
 
 ## 🛠️ Technologies Used
 - Apache2
@@ -28,7 +28,7 @@ Recon Jammer is a dynamic honeypot which detects reconnisance scanning from tool
 
 It's quite obvious in this example that the ```/admin``` is simply using a 301 redirect to the ```/honeypot-admin``` page. This would be a poor honeypot as it's blatantly obvious what it is doing and would not be effective.
 
-### How Recon Jammer's silent redirection works:
+### How ReconPot's silent redirection works:
 
 
 ## 📁 Project Structure
