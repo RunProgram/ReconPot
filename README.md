@@ -16,11 +16,11 @@ ReconPot is a dynamic honeypot which detects reconnaissance scanning from tools 
 1. ```honeypot.py``` lives on the server reading the Apache logs for repeated and suspicious requests from web fuzzers and trips the honeypot for that IP address when it is detected.
 2. The ```/apache/000-default.conf``` file controls the silent redirection using ```mod_rewrite``` instead of standard 301 redirection.
 3. Once the honeypot is deployed, the attacker (their IP) is permanently redirected to the fake ```/admin``` page without knowing.
-4. Sends out an alert to the administrators that someone is attempting reconnaissance on the website which helps harden security. 
+4. Sends out an alert to the administrators that someone is attempting reconnaissance on the website which helps harden security. (WIP, currently building this.)
 
 ## 🚀 Features
 - ReconPot's most important feature is silent redirection which is achieved via Apache2's ```mod_rewrite``` instead of classic 301 redirection. This means that both standard users (real users, administrators, etc.) and attackers will see the ```/admin``` page. However, if your IP has tripped the honeypot, you will get a poisoned version with the exact same directory name as users with the normal version.
-- The poisoned ```/admin``` page captures information on further enumeration attempts or exploitation attempts (SQL injections, etc) and notifies the team that an attack is taking place via ```Discord's API```.
+- The poisoned ```/admin``` page captures information on further enumeration attempts or exploitation attempts (SQL injections, etc) and notifies the team that an attack is taking place via ```Discord's API```. (WIP, currently building this.)
 
 ### Example of poorly executed redirection:
 
