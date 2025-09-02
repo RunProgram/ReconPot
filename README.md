@@ -1,4 +1,4 @@
-# ReconPot, a dynamic, blue team oriented, "active-defense" honeypot which fights against unwanted web reconnaissance.
+# ReconPot: A dynamic, blue team oriented, "active-defense" honeypot which fights against unwanted web reconnaissance.
 
 ## Technologies Used
 - Apache2
