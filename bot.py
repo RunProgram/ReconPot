@@ -3,24 +3,24 @@ import os
 from dotenv import load_dotenv
 from discord import Intents, Client
 
-# STEP 0: LOAD OUR TOKEN FROM SOMEWHERE SAFE
+# load tokens
 load_dotenv()
 TOKEN: Final[str] = os.getenv('DISCORD_TOKEN')
 CHANNEL_ID: Final[int] = int(os.getenv('DISCORD_CHANNEL_ID'))
 
-# STEP 1: BOT SETUP
+# setup bot
 intents: Intents = Intents.default()
 client: Client = Client(intents=intents)
 
 
-# Function for honeypot.py to send alerts
+# how alerts will be sent from honeypot.py
 async def send_alert(ip: str):
     channel = client.get_channel(CHANNEL_ID)
     if channel:
         await channel.send(f"@everyone Web Reconnaissance detected! Fake admin page served to `{ip}`")
 
 
-# STEP 2: STARTUP
+# start the bot
 @client.event
 async def on_ready() -> None:
     print(f'{client.user} is now running!')
