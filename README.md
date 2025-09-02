@@ -35,7 +35,7 @@ It's quite obvious in this example that the ```/admin``` is simply using a 301 r
 
 Since the redireciton is done internally, the redirection is unnoticable and all the attacker sees is the ```/admin``` page just like everyone else.
 
-## ⚙️ Setup
+## Setup
 1. `docker pull runprogram/reconpot:latest`
 2. Create a `.env` file in your root directory with the `DISCORD_TOKEN` and `DISCORD_CHANNEL_ID`
 3. `docker run -d -p 8080:80 --env-file .env reconpot:latest`
