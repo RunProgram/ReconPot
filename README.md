@@ -39,7 +39,7 @@ Since the redireciton is done internally, the redirection is unnoticable and all
 1. `docker pull runprogram/reconpot:latest`
 2. Create a `.env` file in your root directory with the `DISCORD_TOKEN` and `DISCORD_CHANNEL_ID`
 3. `docker run -d -p 8080:80 --env-file .env reconpot:latest`
-4. Then you can test by running gobuster or whatever you prefer against your local IP (e.g. `192.168.0.5:8080'). Reload the page, and you should see "Fake Admin Page." Try loading the exact same directory up on a different device and you'll see "Real Admin Page." Success!
+4. Then you can test by running gobuster or whatever you prefer against your local IP (e.g. `192.168.0.5:8080`). Reload the page, and you should see "Fake Admin Page." Try loading the exact same directory up on a different device and you'll see "Real Admin Page." Success!
 5. To remove your IP and to reset the honeypot, run `docker exec -it (your docker container id) clear_map.sh`. Then run `docker restart (your container id)`
 
 Note: I personally hosted the test web server on ```Oracle Cloud's Free Tier``` which I highly recommend.
