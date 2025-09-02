@@ -1,11 +1,11 @@
 # ReconPot: A dynamic, blue team oriented, "active-defense" honeypot which fights against unwanted web reconnaissance.
 
 ## Technologies Used
+- Python
+- Docker
 - Apache2
-- Python 3
 - Bash
 - `mod_rewrite`
-- Docker
 - Linux (Ubuntu / Debian)
 
 ## Overview
