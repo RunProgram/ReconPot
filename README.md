@@ -43,24 +43,6 @@ Since the redireciton is done internally, the redirection is unnoticable and all
 5. To remove your IP and to reset the honeypot, run `docker exec -it (your docker container id) clear_map.sh`. Then run `docker restart (your container id)`
 
 Note: I personally hosted the test web server on ```Oracle Cloud's Free Tier``` which I highly recommend.
-## Project Structure
-
-```
-/etc/apache2/
-├── sites-available/
-│   └── 000-default.conf         # Apache config with rewrite logic
-├── attacker_ips.map            # Dynamic IP blocklist
-
-/var/www/html/
-├── real-admin/                 # Real admin page
-│   └── index.html
-├── hp/                         # Honeypot page
-│   └── index.html
-├── index.html                  # Default Apache2 page
-
-/home/user/
-└── main.py                     # Detection + IP appender script
-```
 
 ## Security Considerations
 - 
